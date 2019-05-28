@@ -52,6 +52,11 @@
               <item name="mobileApp-v3" type="b2602c69:ProjectViewProjectNode" />
               <item name="mobileApp-v3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="mobileApp-v3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileApp-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -100,12 +105,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559078241786</updated>
       <workItem from="1559078243076" duration="47000" />
-      <workItem from="1559078330027" duration="2010000" />
+      <workItem from="1559078330027" duration="2433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2057000" />
+    <option name="totallyTimeSpent" value="2480000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -175,6 +180,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test" />
   </component>
   <component name="editorHistoryManager">
     <entry file="https://github.com/dieschnittstelle/org.dieschnittstelle.iam.mwf.skeleton.git">
