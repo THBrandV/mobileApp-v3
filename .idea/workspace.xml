@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06c041d8-d873-42b1-a2ff-3a98e7488498" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/app.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/www/app.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -118,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1559078241786</updated>
       <workItem from="1559078243076" duration="47000" />
-      <workItem from="1559078330027" duration="2487000" />
+      <workItem from="1559078330027" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1559080851780</created>
@@ -127,11 +126,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559080851796</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test2">
+      <created>1559080908999</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559080908999</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2534000" />
+    <option name="totallyTimeSpent" value="2691000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -203,7 +209,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="https://github.com/dieschnittstelle/org.dieschnittstelle.iam.mwf.skeleton.git">
@@ -226,7 +233,7 @@
     <entry file="file://$PROJECT_DIR$/www/app.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
