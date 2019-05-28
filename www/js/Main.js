@@ -27,26 +27,16 @@ import {GenericCRUDImplRemote} from "../lib/js/framework-modules.js";
 // import generic application components
 import {GenericDialogTemplateViewController} from "../lib/js/framework-modules.js";
 /* TODO: only include the mapHolder if maps are actually used. Do not forget to export it below */
-import {mapHolder} from "../lib/js/framework-modules.js";
+// import {mapHolder} from "../lib/js/framework-modules.js";
 
 /* application libraries: the main application class */
-import ContentTaggerApplication from "./ContentTaggerApplication.js";
-import * as entities from "./model/Entities.js";
-/* application libraries: controller for generic elements */
-import TagSelectionDialogViewController from "./controller/TagSelectionDialogViewController.js";
-import SidemenuViewController from "./controller/SidemenuViewController.js";
-import MapViewController from "./controller/MapViewController.js";
-/* ... for tags */
-import TagsOverviewViewController from "./controller/TagsOverviewViewController.js";
-import TaggableOverviewViewController from "./controller/TaggableOverviewViewController.js";
-/* ... for notes */
-import NotesOverviewViewController from "./controller/NotesOverviewViewController.js";
-import NotesEditviewViewController from "./controller/NotesEditviewViewController.js";
-import NotesReadviewViewController from "./controller/NotesReadviewViewController.js";
-/* ... for places */
-import PlacesOverviewViewController from "./controller/PlacesOverviewViewController.js";
-import PlacesEditviewViewController from "./controller/PlacesEditviewViewController.js";
+import MyApplication from "./MyApplication.js";
+/* application libraries: model */
+import * as entities from "./model/MyEntities.js";
+/* application libraries: view controllers */
+import MyInitialViewController from "./controller/MyInitialViewController.js";
 // TODO-REPEATED: import any further view controllers here
+
 
 // we export the framework modules required by the application and the application modules required by the framework
 export {
@@ -58,20 +48,11 @@ export {
     GenericCRUDImplRemote,
     GenericDialogTemplateViewController,
     /* TODO: export the mapHolder in case it is used by the application */
-    mapHolder,
+    // mapHolder,
     /* application modules */
-    ContentTaggerApplication,
+    MyApplication,
     entities,
-    TagSelectionDialogViewController,
-    SidemenuViewController,
-    MapViewController,
-    TagsOverviewViewController,
-    TaggableOverviewViewController,
-    NotesOverviewViewController,
-    NotesEditviewViewController,
-    NotesReadviewViewController,
-    PlacesOverviewViewController,
-    PlacesEditviewViewController
+    MyInitialViewController,
     // TODO-REPEATED: export any further view controllers here
 }
 
@@ -79,5 +60,3 @@ export {
 window.onload = () => {
     mwf.onloadApplication();
 }
-
-

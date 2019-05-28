@@ -58,5 +58,12 @@ export default class ViewControllerTemplate extends mwf.ViewController {
         // TODO: implement action bindings for dialog, accessing dialog.root
     }
 
+    /*
+     * for views that initiate transitions to other views
+     */
+    async onReturnFromSubview(subviewid, returnValue, returnStatus) {
+        // TODO: check from which view, and possibly with which status, we are returning, and handle returnValue accordingly
+    }
 
 }
+

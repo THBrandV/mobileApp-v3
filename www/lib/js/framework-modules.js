@@ -21,7 +21,7 @@ import * as xhr from "./mwf/crud/mwfXhr.js";
 /* controller */
 import GenericDialogTemplateViewController from "./mwf/controller/mwfGenericDialogTemplateViewController.js";
 /* TODO: only include the mapHolder if maps are actually used. Do not forget to export it below */
-import mapHolder from "./mwf/controller/mwfMapHolderLeaflet.js";
+//import mapHolder from "./mwf/controller/mwfMapHolderLeaflet.js";
 
 export {
     mwf,
@@ -34,5 +34,5 @@ export {
     xhr,
     GenericDialogTemplateViewController,
     /* TODO: export the mapHolder in case it is used by the application */
-    mapHolder
+    // mapHolder
 }

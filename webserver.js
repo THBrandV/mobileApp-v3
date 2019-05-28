@@ -19,7 +19,7 @@ var server;
 // the HTTPS server
 var httpsServer;
 // the port on which the server will be started
-var port = 2424;
+var port = 8383;
 // the ip address
 var ip = utils.getIPAddress();
 // the segment for identifying the rest api
@@ -28,11 +28,6 @@ var apiref = "api";
 /****************************************************************************
  * adaptable settings
  ****************************************************************************/
-// set this variable to true for testing service workers and progressive webapp manifest without http on localhost
-var localtest = false;
-if (localtest) {
-    ip = "127.0.0.1";
-}
 
 // settings for https
 var httpsEnabled = false;
