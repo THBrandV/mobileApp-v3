@@ -29,6 +29,11 @@ export default class ViewControllerTemplate extends mwf.ViewController {
      */
     bindListItemView(viewid, itemview, item) {
         // TODO: implement how attributes of item shall be displayed in itemview
+        itemview.root.querySelector("h2").textContent = item.title;
+        itemview.root.getElementsByTagName("h3")[0].textContent = item.added;
+        itemView.root.querySelector("img").src = item.src;
+
+
     }
 
     /*

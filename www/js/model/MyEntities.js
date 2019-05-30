@@ -9,11 +9,8 @@ import {mwfUtils} from "../Main.js";
 import {EntityManager} from "../Main.js";
 
 /*************
- * example entity
+ * Datenmodell der Anwendung, Inhalte der Applikation
  *************/
-
-import {mwfUtils} from "../Main.js"
-import {EntityManager} from "../Main.js";
 
 export class MyEntity extends EntityManager.Entity {
 
@@ -23,20 +20,21 @@ export class MyEntity extends EntityManager.Entity {
 
 }
 
-
-export class  MediaItem extends EntityManager.Entity{
-    constructor(title,src,contentType){
+export class MediaItem extends EntityManager.Entity {
+    constructor(title,src,contentType) {
         super();
         this.title = title;
         this.description = "";
         this.added = Date.now();
         this.src = src;
-        this.srcType = null;
+        this.contentType = null;
         this.contentType = contentType;
     }
-
-
+    get addedDateString(){
+        return new Date(this.added).toLocaleDateString();
+    }
 }
+
 
 
 

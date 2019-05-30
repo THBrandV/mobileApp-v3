@@ -37,6 +37,8 @@ import * as entities from "./model/MyEntities.js";
 import MyInitialViewController from "./controller/MyInitialViewController.js";
 // TODO-REPEATED: import any further view controllers here
 import ListviewViewController from "./controller/ListviewViewController.js";
+import ReadviewViewController from "./controller/ReadviewViewController.js";
+import EditviewViewController from "./controller/EditviewViewController.js";
 
 // we export the framework modules required by the application and the application modules required by the framework
 export {
@@ -48,13 +50,15 @@ export {
     GenericCRUDImplRemote,
     GenericDialogTemplateViewController,
     /* TODO: export the mapHolder in case it is used by the application */
-    ListviewViewController //noch rein? -> ,
     // mapHolder,
     /* application modules */
     MyApplication,
     entities,
     MyInitialViewController,
     // TODO-REPEATED: export any further view controllers here
+    ListviewViewController,
+    ReadviewViewController,
+    EditviewViewController
 }
 
 // then start the application

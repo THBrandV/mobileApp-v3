@@ -43,7 +43,7 @@ if (multitenantsEnabled) {
 /****************************************************************************
  * the top level request processing logic including handling of multitenancy
  ****************************************************************************/
-var application = function(req, res) {
+var application = function (req, res) {
     var path = url.parse(req.url).pathname;
     var origpath = path;
 
@@ -52,14 +52,12 @@ var application = function(req, res) {
         console.log(".onHttpRequest(): received an availability request, respond with success");
         res.writeHead(204);
         res.end();
-    }
-    else if (multitenantsEnabled && path == "/") {
+    } else if (multitenantsEnabled && path == "/") {
         console.log(".onHttpRequest(): received a root request");
         res.writeHead(404);
         res.write("ERROR: this server expects requests to specify a tenant id.");
         res.end();
-    }
-    else if (multitenantsEnabled) {
+    } else if (multitenantsEnabled) {
         // MULTITENANT: cut the first segment of the path, which will be the tenant id
         var segments = path.split("/");
         var tenantId = segments[1];
@@ -71,8 +69,7 @@ var application = function(req, res) {
                 res.writeHead(500);
                 res.write("ERROR: The tenants configuration could not be found.");
                 res.end();
-            }
-            else {
+            } else {
                 // parse the file data and try to read out the tenant name
                 var tenants = JSON.parse(data);
                 var tenant = tenants[tenantId];
@@ -82,8 +79,7 @@ var application = function(req, res) {
                     res.writeHead(404);
                     res.write("ERROR: Unknown tenant id: " + tenantId);
                     res.end();
-                }
-                else {
+                } else {
                     // we add the id to the object
                     tenant.id = tenantId;
                     tenant.origpath = origpath;
@@ -95,21 +91,19 @@ var application = function(req, res) {
                         res.writeHead(400);
                         res.write("ERROR: root requests to tenants' application need to put a '/' at the end!");
                         res.end();
-                    }
-                    else {
+                    } else {
 
                         if (!path.startsWith("/")) {
                             path = "/" + path;
                         }
                         // MULTITENANT: from here on, continue processing as before without multitenancy...
-                        handleRequest(req,res,path,tenant);
+                        handleRequest(req, res, path, tenant);
                     }
                 }
             }
         });
-    }
-    else {
-        handleRequest(req,res,path);
+    } else {
+        handleRequest(req, res, path);
     }
 
     // exception handling, see http://stackoverflow.com/questions/5999373/how-do-i-prevent-node-js-from-crashing-try-catch-doesnt-work
@@ -129,7 +123,7 @@ var application = function(req, res) {
 /***********************************************************************************
  * main request handling branching between api request and static resource requests
  ***********************************************************************************/
-function handleRequest(req,res,path,tenant) {
+function handleRequest(req, res, path, tenant) {
 
     console.log((tenant ? tenant.name : "") + ".onHttpRequest(): trying to serve path: " + path);
 
@@ -142,8 +136,7 @@ function handleRequest(req,res,path,tenant) {
         console.log((tenant ? tenant.name : "") + ".onHttpRequest(): received an availability request, respond with success");
         res.writeHead(204);
         res.end();
-    }
-    else if (path.indexOf("/" + apiref + "/") == 0) {
+    } else if (path.indexOf("/" + apiref + "/") == 0) {
         console.log((tenant ? tenant.name : "") + ".onHttpRequest(): got a call to the rest api. Will continue processing there...");
 
         // MULTITENANT: create a new instance of the api with the tenant name for each api request - this solution will survive, e.g., db restarts
@@ -156,39 +149,36 @@ function handleRequest(req,res,path,tenant) {
             console.warn((tenant ? tenant.name : "") + ".onHttpRequest(): path seems to be a template filling expression. Will not deliver anything.");
             res.writeHead(204);
             res.end();
-        }
-        else {
+        } else {
             if (path == '/') {
                 // if the root is accessed we serve the main html document
                 path = "app.html";
-            }
-            else {
+            } else {
                 // we need to consider that the path may be url encoded, e.g. in case a filename contains blanks
                 path = decodeURI(path);
             }
 
             // here we distinguish between uploaded content and other static resources (in order to allow for a different implementation of serveStaticResource(), e.g. be accessing some external file server
             if (path.startsWith("/content")) {
-                serveUploadedContent(req,res,path,tenant);
-            }
-            else {
-                serveStaticResource(req,res,path,tenant);
+                serveUploadedContent(req, res, path, tenant);
+            } else {
+                serveStaticResource(req, res, path, tenant);
             }
         }
     }
 }
 
-function serveUploadedContent(req,res,path,tenant) {
+function serveUploadedContent(req, res, path, tenant) {
     console.log((tenant ? tenant.name : "") + ".onHttpRequest(): serve uploaded content: " + path);
-    doServeStaticResource(req,res,path,tenant);
+    doServeStaticResource(req, res, path, tenant);
 }
 
 // MULTITENANT: provide an alternative implementation of this function if tenants' applications are not provided via the local filesystem, but, e.g., via an external file server
-function serveStaticResource(req,res,path,tenant) {
-    doServeStaticResource(req,res,path,tenant);
+function serveStaticResource(req, res, path, tenant) {
+    doServeStaticResource(req, res, path, tenant);
 }
 
-function doServeStaticResource(req,res,path,tenant) {
+function doServeStaticResource(req, res, path, tenant) {
 // serveable resources will be put in the webcontent directory -- the callback will be passed the data read out from the file being accessed
 // MULTITENANT: we will serve the resources from the tenant's subdirectory within the www webspace or directly from there if multitenancy is not enabled
     fs.readFile(__dirname + "/www/" + (tenant ? tenant.id + "/" : "") + path, function (err, data) {
