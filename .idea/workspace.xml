@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06c041d8-d873-42b1-a2ff-3a98e7488498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.dieschnittstelle.iam.mwf.sample-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.dieschnittstelle.iam.mwf.skeleton-master.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/app.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="170">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/css/mwf.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="305">
+              <caret line="770" column="17" lean-forward="true" selection-start-line="770" selection-start-column="17" selection-end-line="770" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -35,6 +47,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>header</find>
+      <find>mwf-sc</find>
+      <find>mwf-listitem</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -47,10 +66,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1736" />
-    <option name="y" value="-2" />
+    <option name="x" value="-1737" />
+    <option name="y" value="-3" />
     <option name="width" value="1440" />
-    <option name="height" value="704" />
+    <option name="height" value="705" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -58,6 +77,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,11 +90,16 @@
               <item name="mobileApp-v3" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="org.dieschnittstelle.iam.mwf.skeleton" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mobileApp-v3" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,7 +146,8 @@
       <workItem from="1559078243076" duration="47000" />
       <workItem from="1559078330027" duration="3897000" />
       <workItem from="1559159366345" duration="235000" />
-      <workItem from="1559209483556" duration="988000" />
+      <workItem from="1559209483556" duration="3557000" />
+      <workItem from="1559213288929" duration="470000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1559080851780</created>
@@ -151,11 +177,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559081394297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="30.05.2019&#10;Sitzung">
+      <created>1559210819276</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559210819276</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5167000" />
+    <option name="totallyTimeSpent" value="8206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -168,21 +201,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1927" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977778" visible="true" weight="0.27707008" />
       <window_info id="Structure" order="1" sideWeight="0.50222224" side_tool="true" weight="0.24864277" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49837133" visible="true" weight="0.3283582" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4968153" weight="0.32807016" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49887133" weight="0.32537314" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49840763" weight="0.32456142" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32685512" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286219" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50162864" side_tool="true" visible="true" weight="0.3263158" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49920383" weight="0.3263158" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49920383" weight="0.32807016" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50318474" side_tool="true" visible="true" weight="0.32807016" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -243,7 +277,8 @@
     <MESSAGE value="Test2" />
     <MESSAGE value="Test3" />
     <MESSAGE value="00:09&#10;aktuell, nach Tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="00:09&#10;aktuell, nach Tests" />
+    <MESSAGE value="30.05.2019&#10;Sitzung" />
+    <option name="LAST_COMMIT_MESSAGE" value="30.05.2019&#10;Sitzung" />
   </component>
   <component name="editorHistoryManager">
     <entry file="https://github.com/dieschnittstelle/org.dieschnittstelle.iam.mwf.skeleton.git">
@@ -257,10 +292,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/www/lib/css/mwf.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="770" column="17" lean-forward="true" selection-start-line="770" selection-start-column="17" selection-end-line="770" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/app.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="170">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
